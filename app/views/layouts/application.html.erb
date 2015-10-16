@@ -7,8 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class='container'>
-    <%= yield %>
-  </div>
+  <div class='navbar navbar-default'>
+      <a class="navbar-brand" href="/categories">Home</a>
+      <ul class='nav navbar-nav'>
+        <li><a href="/categories/new">Add Category</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <%= flash[:notice] %>
+      <%= yield %>
+
+    </div>
 </body>
 </html>
