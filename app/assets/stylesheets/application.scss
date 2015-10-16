@@ -23,17 +23,19 @@ a:active {
     text-decoration: underline;
 }
 
-li {
+p, li {
   list-style-type: none;
+  font-size: 16px;
 }
 
 h1 {
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
-  font-size: 50px;
+  font-size: 60px;
 }
 
-h3 {
+h2, h3 {
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 30px;
 }
 
 img {
@@ -49,12 +51,17 @@ img {
     margin-top: auto;
 }
 
-.container_index {
+.container_category {
   margin: 50px;
   margin-right: 40px;
+  margin-left: 40px;
+}
+
+.container_post {
+  margin-left: 40px;
 }
 
 .title_font {
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Bad Script', cursive;
 }
