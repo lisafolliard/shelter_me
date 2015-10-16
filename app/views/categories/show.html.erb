@@ -12,7 +12,9 @@
 <% if @category.posts.any? %>
   <ul>
     <% @category.posts.each do |post| %>
-      <li><h4><%= post.title %></h4> by <%= post.contributor %></li>
+      <li><h4><%= post.title %></h4></li>
+      <li>by <%= post.contributor %></li>
+      <li><%= post.description %></li>
       <li><img src='<%= post.image %>'></li>
     <% end %>
   </ul>
@@ -21,8 +23,14 @@
 <% end %>
 
 
+<ul>
+  <% @posts.each do |post| %>
+  <p><%= link_to "Update Post", edit_category_post_path(@category, post) %></p>
 
+<p><%= link_to "Delete Post", category_post_path(@category, post), :method => 'delete' %></p>
+  <% end %>
 
+</ul>
 
 
 <p><%= link_to "Add Post", new_category_post_path(@category) %></p>
