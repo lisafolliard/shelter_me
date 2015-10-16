@@ -18,7 +18,7 @@ describe "the add a post process" do
 end
 
 describe "the update a post process" do
-  it "updates a new post" do
+  it "updates a post" do
     category = Category.create(:name => 'Bike')
     post = Post.create(:title => 'New Bike', :contributor => 'Mary', :description => "Cool Bike", :image => 'image', :category_id => category.id)
     visit category_path(category)
@@ -29,5 +29,15 @@ describe "the update a post process" do
     fill_in 'Image', :with => "Image"
     click_on 'Submit'
     expect(page).to have_content 'Big Bike'
+  end
+end
+
+describe "the delete a post process" do
+  it "deletes a post" do
+    category = Category.create(:name => 'Bike')
+    post = Post.create(:title => 'New Bike', :contributor => 'Mary', :description => "Cool Bike", :image => 'image', :category_id => category.id)
+    visit category_path(category)
+    click_on 'Delete Post'
+    expect(page).to_not have_content 'Big Bike'
   end
 end
