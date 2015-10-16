@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Permanent+Marker|Bad+Script|Reenie+Beanie|Annie+Use+Your+Telescope|Dawning+of+a+New+Day|Over+the+Rainbow' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class='navbar navbar-default'>
@@ -16,7 +17,6 @@
     <div class="container">
       <%= flash[:notice] %>
       <%= yield %>
-
     </div>
 </body>
 </html>

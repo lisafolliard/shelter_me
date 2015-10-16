@@ -1,14 +1,65 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+a {
+  color: grey;
+}
+
+a:link {
+    text-decoration: none;
+    color: grey;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
 li {
   list-style-type: none;
 }
 
-h1, h3 {
+h1 {
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  font-size: 50px;
+}
+
+h3 {
   font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
 }
 
 img {
-  max-width: 250px;
+  max-width: 550px;
+}
+
+// body {
+//   background-image:  url("http://www.hometone.com/wp-content/uploads/2012/07/bike_house_nzosl.png");
+// }
+
+.homepage_title {
+  text-align: center;
+}
+
+.homepage_image {
+    margin-right: 40px;
+    margin-top: auto;
+}
+
+.container_index {
+  margin: 50px;
+  margin-right: 40px;
+}
+
+.title_font {
+  font-size: 25px;
+  font-family: 'Bad Script', cursive;
+  // font-family: 'Reenie Beanie', cursive;
 }
