@@ -1,0 +1,19 @@
+<h1><%= @post.title %></h1>
+
+<p><%= link_to "Edit Post", edit_post_path(@post) %></p>
+<p><%= link_to "Delete Post", post_path(@post), :method => 'delete' %></p>
+
+
+<% if @post.tags.any? %>
+  <h5>Tags for this post:</h5>
+
+  <ul>
+    <% @post.tags.each do |tag| %>
+      <li><%= link_to tag.description, tag_path(tag) %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no tags yet!</p>
+<% end %>
+
+<p><%= link_to "Return to Posts", posts_path %></p>

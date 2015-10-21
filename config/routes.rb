@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
+  root :to => 'static#index'
 
+  resources :posts
   resources :tags
   # root :to => 'categories#index'
   #
