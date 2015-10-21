@@ -5,4 +5,6 @@ describe Post do
   it { should validate_presence_of :contributor }
   it { should validate_presence_of :image }
   it { should validate_presence_of :description }
+  it { should have_and_belong_to_many :tags}
+
 end
