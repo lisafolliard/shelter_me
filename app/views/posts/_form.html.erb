@@ -13,5 +13,13 @@
   <%= f.label :image %>
   <%= f.text_field :image %>
 
+  <h4>Add Tags:</h4>
+  <ul>
+  <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |b| %>
+    <li><%= b.label { b.check_box } %>
+    <%= b.object.name %></li>
+  <% end %>
+  </ul>
+
   <%= f.submit 'Submit', class:'btn btn-success' %>
 <% end %>
