@@ -1,4 +1,4 @@
-<h1><%= @post.title %></h1>
+<h3><%= @post.title %></h3>
 
 <p><%= link_to "Edit Post", edit_post_path(@post) %></p>
 <p><%= link_to "Delete Post", post_path(@post), :method => 'delete' %></p>
@@ -15,5 +15,3 @@
 <% else %>
   <p>There are no tags yet!</p>
 <% end %>
-
-<p><%= link_to "Return to Posts", posts_path %></p>

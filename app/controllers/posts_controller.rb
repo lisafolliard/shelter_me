@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to posts_path
+      redirect_to root_path
     else
       render :new
     end
@@ -32,10 +32,21 @@ class PostsController < ApplicationController
     # end
   end
 
-  # def edit
-  #   @category = Category.find(params[:category_id])
-  #   @post = @category.posts.find(params[:id])
-  # end
+  def edit
+    # @category = Category.find(params[:category_id])
+    @post = Post.find(params[:id])
+    @tags = @post.tags
+  end
+
+  def update
+    @post = Post.find(params[:id])
+    if @post.update(post_params)
+      redirect_to post_path(@post)
+    else
+      @tags = @post.tags
+      render :edit
+    end
+  end
   #
   # def update
   #   @category = Category.find(params[:category_id])

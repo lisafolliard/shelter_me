@@ -1,0 +1,10 @@
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= link_to category.name, category_path(category) %></li>
+  <% end %>
+</ul>
+
+
+<% @post.each do |post| %>
+<li><%= post.title %> || posted on <%= post.created_at.strftime("%B %d, %Y") %></li>
+<% end %>
