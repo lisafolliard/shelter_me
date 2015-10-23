@@ -41,29 +41,21 @@
         null
       ],
       "/Users/lisaf13/Desktop/shelter_me/spec/features/add_post_pages_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/lisaf13/Desktop/shelter_me/spec/features/add_tag_pages_spec.rb": [
         1,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -380,15 +372,15 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null,
         null,
         1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
         null,
         0,
         null,
@@ -443,7 +435,7 @@
         null,
         1,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -451,8 +443,8 @@
       "/Users/lisaf13/Desktop/shelter_me/app/controllers/static_controller.rb": [
         1,
         1,
-        4,
-        4,
+        6,
+        6,
         null,
         null
       ],
@@ -560,6 +552,19 @@
         null,
         null
       ],
+      "/Users/lisaf13/Desktop/shelter_me/spec/features/add_tag_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/lisaf13/Desktop/shelter_me/spec/features/delete_post_pages_spec.rb": [
         1,
         null,
@@ -643,6 +648,6 @@
         null
       ]
     },
-    "timestamp": 1445575802
+    "timestamp": 1445575908
   }
 }
