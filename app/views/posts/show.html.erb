@@ -1,4 +1,8 @@
 <h3><%= @post.title %></h3>
+<h5>posted by: <%= @post.contributor %> on <%= @post.created_at.strftime("%B %d, %Y") %></h5>
+<img src='<%= @post.image %>'>
+
+
 
 <p><%= link_to "Edit Post", edit_post_path(@post) %></p>
 <p><%= link_to "Delete Post", post_path(@post), :method => 'delete' %></p>

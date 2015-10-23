@@ -1,6 +1,11 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+img {
+  max-height: 350px;
+  max-width: 350px;
+}
+
 a {
   color: grey;
 }

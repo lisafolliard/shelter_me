@@ -1,5 +1,5 @@
 <% if @posts.any? %>
-  <h1>Posts:</h1>
+  <h3>All Posts:</h3>
   <ul>
     <% @posts.each do |post| %>
       <li><%= link_to post.title, post_path(post) %></li>
