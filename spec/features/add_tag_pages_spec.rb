@@ -1,11 +1,11 @@
 require 'rails_helper'
 
 describe "the add a tag process" do
-  it "adds a new tag" do
+  it "add a tag" do
     visit root_path
     click_on "Add Tag"
-    tag = FactoryGirl.create(:tag)
+    fill_in 'Name', :with => "Tree"
     click_on 'Submit'
-    tag.name.should eq "Boat"
+    expect(page).to have_content 'Tree'
   end
 end
