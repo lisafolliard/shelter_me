@@ -6,3 +6,9 @@ FactoryGirl.define do
     image 'image'
   end
 end
+
+FactoryGirl.define do
+  factory(:tag) do
+    name "Boat"
+  end
+end

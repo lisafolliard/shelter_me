@@ -14,3 +14,22 @@
 #     expect(page).to have_content 'Big Bike'
 #   end
 # end
+
+#
+# describe "the edit a post process" do
+#   it "edits a post" do
+#     visit root_path
+#     click_on "Add Post"
+#     post = FactoryGirl.create(:post)
+#     click_on 'Submit'
+#     post.title.should eq "Big Bike"
+#     click_link "Big Bike"
+#     click_on "Edit Post"
+#     fill_in "title", with: "Tandem"
+#     fill_in 'contributor', with: 'suesue'
+#     fill_in 'Description', with: 'cool double bike'
+#     fill_in 'image', with: 'image'
+#     click_on 'Submit'
+#     expect(page).to have_content "Tandem"
+#   end
+# end
